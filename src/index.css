@@ -1,0 +1,240 @@
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: rgb(236, 236, 236);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bolder;
+  gap: 10px;
+}
+
+.container {
+  padding-left: 100px;
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+button {
+  outline: none;
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 15px;
+  color: white;
+  cursor: pointer;
+}
+
+input {
+  background: rgb(236, 236, 236);
+  padding: 10px;
+  outline: none;
+  border: 0px;
+  border-radius: 10px;
+  width: 90%;
+}
+
+label {
+  font-weight: bolder;
+  margin-left: 10px;
+}
+
+p {
+  font-size: larger;
+  font-weight: bolder;
+  padding: 0;
+  margin: 0;
+}
+
+.cvDetailsInput {
+  width: 25%;
+}
+.cvDetailsInput .generalInformation {
+  background: #ffffff;
+  max-width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #d8d4d4;
+  margin-bottom: 20px;
+}
+.cvDetailsInput .generalInformation p {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.cvDetailsInput .generalInformation p img {
+  cursor: pointer;
+}
+.cvDetailsInput .generalInformation .generalInformationInput form {
+  width: 100%;
+}
+.cvDetailsInput .education {
+  background: #ffffff;
+  max-width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #d8d4d4;
+  margin-bottom: 20px;
+}
+.cvDetailsInput .education p {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.cvDetailsInput .education p img {
+  cursor: pointer;
+}
+.cvDetailsInput .education .educationQualificationInput textarea {
+  outline: none;
+  background: rgb(236, 236, 236);
+  border: 0;
+  border-radius: 5px;
+}
+.cvDetailsInput .education .educationQualificationInput form .dates {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  flex-direction: row;
+  gap: 10px;
+}
+.cvDetailsInput .education .educationQualificationInput form .formButtons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  width: 100%;
+}
+.cvDetailsInput .experience {
+  background: #ffffff;
+  max-width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #d8d4d4;
+  margin-bottom: 20px;
+}
+.cvDetailsInput .experience p {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.cvDetailsInput .experience p img {
+  cursor: pointer;
+}
+.cvDetailsInput .experience .experienceBoxInput form .dates {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  flex-direction: row;
+  gap: 10px;
+}
+.cvDetailsInput .experience .experienceBoxInput form .formButtons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  width: 100%;
+}
+.cvDetailsInput .experience .experienceBoxInput form textarea {
+  outline: none;
+  background: #eef0f4;
+  border: 0;
+  border-radius: 5px;
+  width: 100%;
+  padding: 2px;
+  resize: vertical;
+}
+
+.cvPreview {
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.1), 0 8px 16px -8px rgba(0, 0, 0, 0.25);
+  width: 21cm;
+  height: 29.7cm;
+  border: 0px;
+  border-radius: 5px;
+}
+.cvPreview .cv {
+  background: #ffffff;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  width: 100%;
+  height: 100%;
+}
+.cvPreview .cv .generalInfo .generalInfoContents {
+  padding: 25px 15px;
+  color: white;
+  font-size: medium;
+  font-weight: 100;
+  background: #0e374e;
+}
+.cvPreview .cv .generalInfo .generalInfoContents .name {
+  text-align: center;
+}
+.cvPreview .cv .generalInfo .generalInfoContents .contactInfo {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin: auto;
+  justify-content: center;
+}
+.cvPreview .cv .generalInfo .generalInfoContents .contactInfo .email {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.cvPreview .cv .generalInfo .generalInfoContents .contactInfo .number {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+}
+.cvPreview .cv .generalInfo .generalInfoContents .contactInfo .location {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+.cvPreview .cv .resumeBottom {
+  background: #ffffff;
+}
+.cvPreview .cv .resumeBottom .educationBox {
+  margin-top: 40px;
+  padding: 0 56px;
+}
+.cvPreview .cv .resumeBottom .educationBox .eduInfoBox {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 15px;
+}
+.cvPreview .cv .resumeBottom .educationBox .eduInfoBox p {
+  font-size: medium;
+  font-weight: 400;
+}
+.cvPreview .cv .resumeBottom .experienceBox {
+  margin-top: 40px;
+  padding: 0 56px;
+}
+.cvPreview .cv .resumeBottom .experienceBox .expInfoBox {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 15px;
+}
+.cvPreview .cv .resumeBottom .experienceBox .expInfoBox p {
+  font-size: medium;
+  font-weight: 400;
+}/*# sourceMappingURL=index.css.map */
